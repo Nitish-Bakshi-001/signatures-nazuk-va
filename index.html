@@ -1,221 +1,344 @@
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vriddhi Advisors Email Signature</title>
-  <style>
-  /* Base reset */
-  body {
-    margin:0;
-    padding:0;
-    font-family:'Segoe UI','Calibri','Helvetica Neue',Arial,sans-serif;
-  }
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="date=no" />
+<meta name="format-detection" content="address=no" />
+<meta name="format-detection" content="email=no" />
+<title>Vriddhi Advisors Email Signature</title>
+<!--[if mso]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<style type="text/css">
+/* RESET */
+body, table, td, p, a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+table, td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  border-collapse: collapse;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0 none;
+  outline: none;
+  text-decoration: none;
+  display: block;
+}
+body {
+  width: 100% !important;
+  min-width: 100%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+}
+/* Outlook external class fix */
+.ExternalClass { width: 100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span,
+.ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%;
+}
+/* Prevent iOS auto-linking */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
-  /* Tablets (iPads & similar) - 768px to 1024px */
-  @media screen and (max-width:1024px) {
-    .wrapper {
-      max-width:420px !important;
-    }
-    .name {
-      font-size:18px !important;
-    }
-    .designation {
-      font-size:14px !important;
-    }
-    .logo {
-      width:120px !important;
-      padding-right:12px !important;
-    }
-    .logo img {
-      width:110px !important;
-    }
-    .details {
-      font-size:13px !important;
-      line-height:20px !important;
-    }
-    .contact-row {
-      padding:3px 0 !important;
-    }
-  }
+/* === RESPONSIVE === */
 
-  /* Small tablets and large phones - 481px to 767px */
-  @media screen and (max-width:767px) {
-    .wrapper {
-      max-width:100% !important;
-    }
-    .content-table {
-      display:block !important;
-      width:100% !important;
-    }
-    .logo {
-      display:block !important;
-      width:100% !important;
-      text-align:center !important;
-      padding:0 0 12px 0 !important;
-    }
-    .logo img {
-      width:120px !important;
-      margin:0 auto !important;
-    }
-    .details {
-      display:block !important;
-      width:100% !important;
-      font-size:13px !important;
-      line-height:20px !important;
-    }
-    .contact-table {
-      margin:0 auto !important;
-    }
-  }
+/* Tablet 768–1024px */
+@media only screen and (max-width: 1024px) {
+  .wrapper    { max-width: 420px !important; }
+  .name-text  { font-size: 18px !important; }
+  .desig-text { font-size: 14px !important; }
+  .logo-cell  { width: 120px !important; padding-right: 12px !important; }
+  .logo-img   { width: 110px !important; height: auto !important; }
+  .details-td { font-size: 13px !important; line-height: 20px !important; }
+}
 
-  /* Mobile phones - up to 480px */
-  @media screen and (max-width:480px) {
-    .wrapper {
-      max-width:100% !important;
-      padding:0 10px !important;
-    }
-    .name {
-      font-size:17px !important;
-    }
-    .designation {
-      font-size:13px !important;
-    }
-    .logo img {
-      width:100px !important;
-    }
-    .details {
-      font-size:12px !important;
-      line-height:18px !important;
-    }
-    .icon img {
-      width:16px !important;
-      height:16px !important;
-    }
-    .contact-row {
-      padding:4px 0 !important;
-    }
-    .tagline {
-      font-size:13px !important;
-      padding:8px !important;
-    }
-    .disclaimer {
-      font-size:9px !important;
-      line-height:13px !important;
-    }
-  }
-  </style>
-  </head>
-  <body>
-  <table cellpadding="0" cellspacing="0" border="0" width="100%"
-    class="wrapper"
-    style="max-width:460px;color:#2f2f2f;">
-  <!-- NAME -->
+/* Large phone 481–767px */
+@media only screen and (max-width: 767px) {
+  .wrapper       { max-width: 100% !important; width: 100% !important; }
+  .content-tr    { display: block !important; width: 100% !important; }
+  .logo-cell     { display: block !important; width: 100% !important;
+                   text-align: left !important; padding: 0 0 12px 0 !important; }
+  .logo-img      { width: 120px !important; height: auto !important; margin: 0 !important; }
+  .details-td    { display: block !important; width: 100% !important;
+                   font-size: 13px !important; line-height: 20px !important; }
+  .contact-table { margin: 0 !important; }
+}
+
+/* Mobile up to 480px */
+@media only screen and (max-width: 480px) {
+  .wrapper       { max-width: 100% !important; width: 100% !important; padding: 0 10px !important; }
+  .name-text     { font-size: 17px !important; }
+  .desig-text    { font-size: 13px !important; }
+  .logo-img      { width: 100px !important; height: auto !important; }
+  .details-td    { font-size: 12px !important; line-height: 18px !important; }
+  .tagline-td    { font-size: 13px !important; padding: 8px !important; }
+  .disclaimer-td { font-size: 9px !important; line-height: 13px !important; }
+  /* Icons: hard-locked 18x18, never scale */
+  .icon-cell     { width: 26px !important; min-width: 26px !important; padding-right: 8px !important; }
+  .icon-img      { width: 18px !important; height: 18px !important;
+                   min-width: 18px !important; min-height: 18px !important;
+                   max-width: 18px !important; max-height: 18px !important; }
+}
+</style>
+</head>
+
+<body style="margin:0;padding:0;background-color:#ffffff;width:100%;">
+
+<!--[if mso]>
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="460" align="left" style="width:460px;border-collapse:collapse;">
+<tr><td style="padding:0;width:460px;">
+<![endif]-->
+
+<!-- ═══════════════════════════════════════
+     MAIN WRAPPER
+     - width="100%" + max-width for modern clients
+     - Outlook uses the mso conditional above (460px fixed)
+════════════════════════════════════════ -->
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" align="left"
+  class="wrapper"
+  style="max-width:460px;width:100%;background-color:#ffffff;border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+
+  <!-- ─── NAME ─── -->
   <tr>
-    <td style="padding:16px 0 6px 0;">
-      <div class="name" style="font-size:18px;font-weight:600;line-height:1.2;">
+    <td align="left" valign="top"
+      style="padding:16px 0 6px 0;font-family:'Segoe UI',Calibri,Arial,sans-serif;">
+      <p class="name-text"
+        style="margin:0;padding:0;font-size:18px;font-weight:bold;line-height:22px;color:#2f2f2f;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
         CA Nazuk Bhatia
-      </div>
-      <div class="designation" style="font-size:14px;color:#5f5f5f;padding-top:4px;">
+      </p>
+      <!-- spacer between name and designation -->
+      <p style="margin:0;padding:0;font-size:4px;line-height:4px;mso-line-height-rule:exactly;">&nbsp;</p>
+      <p class="desig-text"
+        style="margin:0;padding:0;font-size:14px;font-weight:normal;line-height:18px;color:#5f5f5f;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
         Manager
-      </div>
+      </p>
     </td>
   </tr>
-  <!-- DIVIDER -->
+
+  <!-- ─── TOP DIVIDER ─── -->
+  <!-- font-size:0 + line-height:0 kills phantom spacing in Outlook -->
   <tr>
-    <td style="border-bottom:2px solid #3E6658;"></td>
+    <td align="left" valign="top" height="2"
+      style="font-size:0;line-height:0;height:2px;background-color:#3E6658;mso-line-height-rule:exactly;">
+      &nbsp;
+    </td>
   </tr>
-  <!-- CONTENT -->
+
+  <!-- ─── LOGO + CONTACT SECTION ─── -->
   <tr>
-  <td style="padding:14px 0;">
-  <table cellpadding="0" cellspacing="0" width="100%" class="content-table">
+    <td align="left" valign="top" style="padding:14px 0;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+        <tr class="content-tr">
+
+          <!-- LOGO -->
+          <!-- width attribute (no units) is the Outlook-safe way to set column width -->
+          <td class="logo-cell" align="left" valign="middle" width="140"
+            style="width:140px;padding-right:16px;vertical-align:middle;">
+            <!--[if mso]>
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+            <tr><td width="130" style="width:130px;">
+            <![endif]-->
+            <img class="logo-img"
+              src="VRIDDHI LOGO PNG final.png"
+              alt="Vriddhi Advisors"
+              width="130"
+              style="display:block;border:0 none;outline:none;text-decoration:none;width:130px;height:auto;" />
+            <!--[if mso]></td></tr></table><![endif]-->
+          </td>
+
+          <!-- CONTACT DETAILS -->
+          <td class="details-td" align="left" valign="top"
+            style="vertical-align:top;font-size:14px;line-height:20px;color:#2f2f2f;font-family:'Segoe UI',Calibri,Arial,sans-serif;">
+
+            <!-- EMAIL -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+              class="contact-table"
+              style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+              <tr>
+                <!-- Icon cell: width set via attribute AND inline style AND mso conditional wrapper -->
+                <td class="icon-cell" align="left" valign="middle" width="26"
+                  style="width:26px;padding-right:8px;vertical-align:middle;">
+                  <!--[if mso]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td width="18" style="width:18px;padding:0;">
+                  <![endif]-->
+                  <img class="icon-img"
+                    src="https://img.icons8.com/material-rounded/48/3E6658/email.png"
+                    alt="Email"
+                    width="18" height="18"
+                    style="display:block;border:0 none;outline:none;width:18px;height:18px;min-width:18px;min-height:18px;max-width:18px;max-height:18px;" />
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+                <td align="left" valign="middle"
+                  style="vertical-align:middle;font-size:14px;line-height:20px;color:#2f2f2f;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+                  <a href="mailto:nazuk.Bhatia@vriddhiadvisors.com"
+                    style="color:#2f2f2f;text-decoration:none;font-size:14px;line-height:20px;font-family:'Segoe UI',Calibri,Arial,sans-serif;word-break:break-word;mso-line-height-rule:exactly;">
+                    nazuk.Bhatia@vriddhiadvisors.com
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- 4px spacer -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+              style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+              <tr>
+                <td align="left" valign="top" height="4"
+                  style="font-size:4px;line-height:4px;height:4px;mso-line-height-rule:exactly;">&nbsp;</td>
+              </tr>
+            </table>
+
+            <!-- PHONE -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+              class="contact-table"
+              style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+              <tr>
+                <td class="icon-cell" align="left" valign="middle" width="26"
+                  style="width:26px;padding-right:8px;vertical-align:middle;">
+                  <!--[if mso]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td width="18" style="width:18px;padding:0;">
+                  <![endif]-->
+                  <img class="icon-img"
+                    src="https://img.icons8.com/material-rounded/48/3E6658/phone.png"
+                    alt="Phone"
+                    width="18" height="18"
+                    style="display:block;border:0 none;outline:none;width:18px;height:18px;min-width:18px;min-height:18px;max-width:18px;max-height:18px;" />
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+                <td align="left" valign="middle"
+                  style="vertical-align:middle;font-size:14px;line-height:20px;color:#2f2f2f;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+                  <a href="tel:+919878822725"
+                    style="color:#2f2f2f;text-decoration:none;font-size:14px;line-height:20px;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+                    +91 98788 22725
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- 4px spacer -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+              style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+              <tr>
+                <td align="left" valign="top" height="4"
+                  style="font-size:4px;line-height:4px;height:4px;mso-line-height-rule:exactly;">&nbsp;</td>
+              </tr>
+            </table>
+
+            <!-- WEBSITE -->
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+              class="contact-table"
+              style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+              <tr>
+                <td class="icon-cell" align="left" valign="middle" width="26"
+                  style="width:26px;padding-right:8px;vertical-align:middle;">
+                  <!--[if mso]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr><td width="18" style="width:18px;padding:0;">
+                  <![endif]-->
+                  <img class="icon-img"
+                    src="https://img.icons8.com/material-rounded/48/3E6658/domain.png"
+                    alt="Website"
+                    width="18" height="18"
+                    style="display:block;border:0 none;outline:none;width:18px;height:18px;min-width:18px;min-height:18px;max-width:18px;max-height:18px;" />
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+                <td align="left" valign="middle"
+                  style="vertical-align:middle;font-size:14px;line-height:20px;color:#2f2f2f;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+                  <a href="https://vriddhiadvisors.com"
+                    style="color:#2f2f2f;text-decoration:none;font-size:14px;line-height:20px;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+                    vriddhiadvisors.com
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <!-- ─── BOTTOM DIVIDER ─── -->
   <tr>
-  <!-- LOGO -->
-  <td class="logo" width="140" valign="middle" style="padding-right:16px;">
-    <img
-      src="VRIDDHI LOGO PNG final.png"
-      alt="Vriddhi Advisors"
-      width="130"
-      style="display:block;border:0;outline:none;text-decoration:none;">
-  </td>
-  <!-- DETAILS -->
-  <td class="details" valign="top" style="font-size:14px;line-height:22px;">
-  <!-- EMAIL -->
-  <table cellpadding="0" cellspacing="0" class="contact-table">
-  <tr class="contact-row" style="padding:2px 0;">
-  <td class="icon" style="padding-right:8px;vertical-align:middle;">
-    <img src="https://img.icons8.com/material-rounded/48/3E6658/email.png"
-      width="18" height="18" style="display:block;">
-  </td>
-  <td style="vertical-align:middle;">
-    <a href="mailto:nazuk.Bhatia@vriddhiadvisors.com"
-      style="color:#2f2f2f;text-decoration:none;word-break:break-word;">
-      nazuk.Bhatia@vriddhiadvisors.com
-    </a>
-  </td>
+    <td align="left" valign="top" height="2"
+      style="font-size:0;line-height:0;height:2px;background-color:#3E6658;mso-line-height-rule:exactly;">
+      &nbsp;
+    </td>
   </tr>
-  </table>
-  <!-- PHONE -->
-  <table cellpadding="0" cellspacing="0" class="contact-table" style="padding-top:4px;">
-  <tr class="contact-row" style="padding:2px 0;">
-  <td class="icon" style="padding-right:8px;vertical-align:middle;">
-    <img src="https://img.icons8.com/material-rounded/48/3E6658/phone.png"
-      width="18" height="18" style="display:block;">
-  </td>
-  <td style="vertical-align:middle;">
-    <a href="tel:+91 9878822725"
-      style="color:#2f2f2f;text-decoration:none;">
-      +91 98788 22725
-    </a>
-  </td>
-  </tr>
-  </table>
-  <!-- WEBSITE -->
-  <table cellpadding="0" cellspacing="0" class="contact-table" style="padding-top:4px;">
-  <tr class="contact-row" style="padding:2px 0;">
-  <td class="icon" style="padding-right:8px;vertical-align:middle;">
-    <img src="https://img.icons8.com/material-rounded/48/3E6658/domain.png"
-      width="18" height="18" style="display:block;">
-  </td>
-  <td style="vertical-align:middle;">
-    <a href="https://vriddhiadvisors.com"
-      style="color:#2f2f2f;text-decoration:none;">
-      vriddhiadvisors.com
-    </a>
-  </td>
-  </tr>
-  </table>
-  </td>
-  </tr>
-  </table>
-  </td>
-  </tr>
-  <!-- DIVIDER -->
+
+  <!-- 8px spacer -->
   <tr>
-  <td style="border-bottom:2px solid #3E6658;"></td>
+    <td align="left" valign="top" height="8"
+      style="font-size:8px;line-height:8px;height:8px;mso-line-height-rule:exactly;">&nbsp;</td>
   </tr>
-  <!-- TAGLINE -->
+
+  <!-- ─── TAGLINE ─── -->
+  <!-- Wrapped in its own table so background-color fills full width reliably in Outlook -->
   <tr>
-  <td style="padding-top:8px;">
-    <div class="tagline" style="
-      background:#3E6658;
-      color:#ffffff;
-      font-size:15px;
-      padding:10px;
-      text-align:center;
-      font-weight:500;">
-      Unlock your growth with Vriddhi Advisors
-    </div>
-  </td>
+    <td align="left" valign="top" style="padding:0;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"
+        style="border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+        <tr>
+          <td class="tagline-td" align="center" valign="middle"
+            style="background-color:#3E6658;padding:10px;font-size:15px;line-height:20px;font-weight:bold;color:#ffffff;font-family:'Segoe UI',Calibri,Arial,sans-serif;text-align:center;mso-line-height-rule:exactly;">
+            Unlock your growth with Vriddhi Advisors
+          </td>
+        </tr>
+      </table>
+    </td>
   </tr>
-  <!-- DISCLAIMER -->
+
+  <!-- 16px spacer -->
   <tr>
-  <td class="disclaimer" style="padding-top:16px;font-size:10px;color:#6a6a6a;line-height:15px;">
-    <strong>Well-Being Notice:</strong> If you receive this outside working hours, please respond at your convenience.
-    <br><br>
-    <strong>Confidentiality Disclaimer:</strong> This message is intended only for the recipient. Private/ Confidential Information may be contained in this message. If received in error, please delete it and notify the sender. Any information in this message that does not relate to the official business of the organisation shall be understood as neither given nor endorsed by it. Vriddhi Advisors is not responsible for any alterations made during transmission.
-  </td>
+    <td align="left" valign="top" height="16"
+      style="font-size:16px;line-height:16px;height:16px;mso-line-height-rule:exactly;">&nbsp;</td>
   </tr>
-  </table>
-  </body>
-  </html>
+
+  <!-- ─── DISCLAIMER ─── -->
+  <!-- <p> tags used instead of <br> for reliable spacing in Outlook -->
+  <tr>
+    <td class="disclaimer-td" align="left" valign="top"
+      style="font-size:10px;line-height:15px;color:#6a6a6a;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+      <p style="margin:0;padding:0;font-size:10px;line-height:15px;color:#6a6a6a;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+        <strong style="font-weight:bold;color:#6a6a6a;font-family:'Segoe UI',Calibri,Arial,sans-serif;">Well-Being Notice:</strong>
+        If you receive this outside working hours, please respond at your convenience.
+      </p>
+      <p style="margin:0;padding:0;font-size:8px;line-height:8px;mso-line-height-rule:exactly;">&nbsp;</p>
+      <p style="margin:0;padding:0;font-size:10px;line-height:15px;color:#6a6a6a;font-family:'Segoe UI',Calibri,Arial,sans-serif;mso-line-height-rule:exactly;">
+        <strong style="font-weight:bold;color:#6a6a6a;font-family:'Segoe UI',Calibri,Arial,sans-serif;">Confidentiality Disclaimer:</strong>
+        This message is intended only for the recipient. Private/ Confidential Information may be contained in this message. If received in error, please delete it and notify the sender. Any information in this message that does not relate to the official business of the organisation shall be understood as neither given nor endorsed by it. Vriddhi Advisors is not responsible for any alterations made during transmission.
+      </p>
+    </td>
+  </tr>
+
+  <!-- 16px bottom padding -->
+  <tr>
+    <td align="left" valign="top" height="16"
+      style="font-size:16px;line-height:16px;height:16px;mso-line-height-rule:exactly;">&nbsp;</td>
+  </tr>
+
+</table>
+
+<!--[if mso]>
+</td></tr></table>
+<![endif]-->
+
+</body>
+</html>
